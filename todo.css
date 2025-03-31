@@ -7,6 +7,7 @@
 body{
     background: url("https://i.pinimg.com/originals/ac/54/a1/ac54a128942c750799c2c1fe144d2467.jpg");
     background-size: cover;
+    background-position: center;
    /* background-color: rgb(250, 188, 133); */
 }
 
@@ -17,6 +18,11 @@ body{
     padding: 2rem;
     background-color: rgb(250, 250, 250,0.2);
     box-shadow: 2px 2px 5px white, -2px -2px 5px white;
+}
+
+.search{
+    display: flex;
+    justify-content: space-around;
 }
 
 input{
@@ -50,11 +56,17 @@ h1{
     border: none;
     border-radius: 50%;
     font-size: 35px;
-    position: relative;
     padding: 5px;
     font-weight: 600;
     line-height: 5px;
     transition: 0.6s;
+    display: flex;
+    justify-content: center;
+}
+
+.add p{
+    position: relative;
+    top: -1rem;
 }
 
 .add:hover{
@@ -72,7 +84,6 @@ ul::-webkit-scrollbar{
 }
 
 li{
-    margin: 8px;
     font-size: 25px;
     font-weight: 600;
     display: flex;
@@ -80,6 +91,7 @@ li{
     padding: 8px 25px;
     list-style: none;
     color: black;
+    text-align: center;
 }
 
 li:hover{
@@ -103,3 +115,89 @@ li button{
 li button:hover{
     transform: scale(1.2);
 }
+
+@media (max-width:750px){   
+    .box{
+        height: 30rem;
+        width: 30rem;
+    }
+}
+
+@media (max-width:570px){   
+    .box{
+        height: 25rem;
+        width: 25rem;
+    }
+    input{
+        height: 2.5rem;
+        width: 70%;
+    }
+    .add{
+        height: 3rem;
+        width: 3rem;
+    }
+    .add p{
+        top: -1rem;
+        font-size: 2rem;
+    }
+    ul{
+        margin-top: 2rem;
+    }
+    li{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:500px){   
+    .box{
+        height: 25rem;
+        width: 20rem;
+    }
+    input{
+        height: 2.5rem;
+        width: 70%;
+    }
+    .add{
+        height: 3rem;
+        width: 3rem;
+    }
+    .add p{
+        top: -1.3rem;
+    }
+    ul{
+        margin-top: 2rem;
+    }
+    li{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:410px){   
+    .box{
+        height: 25rem;
+        width: 15rem;
+    }
+    input{
+        height: 1rem;
+        width: 60%;
+        font-size: 1rem;
+        padding: 0.5rem ;
+    }
+    .add{
+        height: 2rem;
+        width: 2rem;
+    }
+    .add p{
+        top: -1.7rem;
+    }
+    ul{
+        margin-top: 2rem;
+    }
+    li{
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
